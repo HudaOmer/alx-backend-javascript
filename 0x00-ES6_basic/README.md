@@ -1,14 +1,24 @@
-#Project
+# Project 0x00-ES6_basic
 - Solutions By Huda Omer
 ## 15 tasks
 
-#For this project, we expect you to look at these concepts:
+##skills:
+JavaScript
+ES6
+
+ Weight: 1
+ Project will start May 27, 2024 5:00 AM, must end by May 28, 2024 5:00 AM
+ Checker was released at May 27, 2024 11:00 AM
+ An auto review will be launched at the deadline
+
+# Concepts
+For this project, we expect you to look at these concepts:
 
 JavaScript programming
 Software Linter
 
 
-#Resources
+# Resources
 Read or watch:
 
 - ECMAScript 6 - ECMAScript 2015
@@ -18,7 +28,7 @@ Read or watch:
 - Rest parameter
 - Javascript ES6 — Iterables and Iterators
 
-#Learning Objectives
+# Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 - What ES6 is
@@ -31,7 +41,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - Object creation and their properties in ES6
 - Iterators and for-of loops
 
-#Requirements
+# Requirements
 General
 - All your files will be executed on Ubuntu 18.04 LTS using NodeJS 12.11.x
 - Allowed editors: vi, vim, emacs, Visual Studio Code
@@ -42,7 +52,7 @@ General
 - Your code will be analyzed using the linter ESLint along with specific rules that we’ll provide
 - All of your functions must be exported
 
-#Setup
+# Setup
 Install NodeJS 12.11.x
 (in your home directory):
 
@@ -59,7 +69,7 @@ $ npm -v
 Install Jest, Babel, and ESLint
 in your project directory, install Jest, Babel and ESList by using the supplied package.json and run npm install.
 
-#Configuration files
+# Configuration files
 Add the files below to your project directory
 
 package.json
