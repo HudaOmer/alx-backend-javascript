@@ -2,7 +2,7 @@
 - Solutions By Huda Omer
 ## 15 tasks
 
-##skills:
+## skills:
 JavaScript
 ES6
 
