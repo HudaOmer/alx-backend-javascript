@@ -1,0 +1,3 @@
+- use /* eslint-disable no-unused-vars */ to ugnore unused consts
+ad --fix : ```npm eslint <file name> --fix ```
+- run ```npm run lint <file name> ```, similar to betty and pycodestyle
