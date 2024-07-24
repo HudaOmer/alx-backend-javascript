@@ -12,5 +12,4 @@ const app = http.createServer((request, response) => {
 app.listen(port, hostname, () => {
 });
 
-//make sure to export
 module.exports = app;
