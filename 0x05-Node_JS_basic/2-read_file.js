@@ -7,15 +7,12 @@ function countStudents(fileName) {
   let length = 0;
 
   try {
-
     const fileContents = fs.readFileSync(fileName, 'utf-8');
     const lines = fileContents.toString().split('\n');
-
     for (let i = 0; i < lines.length; i += 1) {
       if (lines[i]) {
         length += 1;
         const field = lines[i].toString().split(',');
-
         if (Object.prototype.hasOwnProperty.call(students, field[3])) {
           students[field[3]].push(field[0]);
         } else {
