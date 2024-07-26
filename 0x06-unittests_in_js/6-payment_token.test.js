@@ -4,7 +4,6 @@ const expect = require("chai").expect;
 
 describe("getPaymentTokenFromAPI", function() {
     it("Async testing with done callback, payment.", function(done) {
-    return c;
 	getPaymentTokenFromAPI(true)
 	    .then((data) => {
 		expect(data).to.have.property('data');
