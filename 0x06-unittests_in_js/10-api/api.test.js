@@ -7,13 +7,13 @@ describe("Index page", function() {
 	url: "http://localhost:7865/",
 	method: "GET"
     }
-    it("check correct status code", function(done) {
+    it("Check the correct status code", function(done) {
 	request(options, function(err, res, body) {
 	    expect(res.statusCode).to.equal(200);
 	    done();
 	});
     });
-    it("check correct content", function(done) {
+    it("Check the correct content", function(done) {
 	request(options, function(err, res, body) {
 	    expect(body).to.equal("Welcome to the payment system");
 	    done();
@@ -22,19 +22,19 @@ describe("Index page", function() {
 });
 
 describe("Cart page", function() {
-    it("check correct status code for correct url", function(done) {
+    it("Check the correct status code for correct url", function(done) {
 	request.get("http://localhost:7865/cart/12", function(err, res, body) {
 	    expect(res.statusCode).to.equal(200);
 	    done();
 	});
     });
-    it("check correct content for correct url", function(done) {
+    it("Check the correct content for correct url", function(done) {
 	request.get("http://localhost:7865/cart/12", function(err, res, body) {
 	    expect(body).to.equal("Payment methods for cart 12");
 	    done();
 	});
     });
-    it("check correct status code for incorrect url", function(done) {
+    it("Check the correct status code for incorrect url", function(done) {
 	request.get("http://localhost:7865/cart/kim", function(err, res, body) {
 	    expect(res.statusCode).to.equal(404);
 	    done();
@@ -43,7 +43,7 @@ describe("Cart page", function() {
 });
 
 describe("Available_payments page", function() {
-    it("check correct status for correct url", function() {
+    it("Check the correct status for correct url", function() {
 	request.get("http://localhost:7865/available_payments", (err, res, body) => {
 	    if (err) {
 		expect(res.statusCode).to.not.equal(200);
@@ -52,7 +52,7 @@ describe("Available_payments page", function() {
 	    }
 	});
     });
-    it("check correct body content for correct url", function() {
+    it("Check the correct body content for correct url", function() {
 	const option = {json: true};
 	const payLoad = {
 	    payment_methods: {
@@ -71,7 +71,7 @@ describe("Available_payments page", function() {
 });
 
 describe("Login", function() {
-    it("check correct status code for request that's sent properly", function(done) {
+    it("Check the correct status code for request that's sent properly", function(done) {
 	const opt = {
 	    url: "http://localhost:7865/login",
 	    json: true,
@@ -84,7 +84,7 @@ describe("Login", function() {
 	    done();
 	});
     });
-    it("check correct content for request that's sent properly", function(done) {
+    it("Check the correct content for request that's sent properly", function(done) {
 	const opts = {
 	    url: "http://localhost:7865/login",
 	    json: true,
@@ -101,7 +101,7 @@ describe("Login", function() {
 	    done();
 	});
     });
-    it("check correct status code for request that's not sent properly", function(done) {
+    it("Check the correct status code for request that's not sent properly", function(done) {
 	const op = {
 	    url: "http://localhost:7865/login",
 	    json: true,
